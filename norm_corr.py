@@ -54,18 +54,17 @@ def hash_convert_binary(str):
 
 
 # step one
-
 # generate 2 matrix, A and B
 A = 1 - 2 * np.random.randint(2, size=(50, 100))
 B = 1 - 2 * np.random.randint(2, size=(50, 100))
 
 # generate matrix C
-C = np.dot(A, np.transpose(B))
+C = A * B
 
 # for each row in matrix C, randomly generate PN sequence
 pn = []
 for row in C:
-    pn.append(generate_max_len_seq(nbits=50, state=row))
+    pn.append(generate_max_len_seq(nbits=100, state=row))
 
 A_trans = np.transpose(A)
 B_trans = np.transpose(B)
