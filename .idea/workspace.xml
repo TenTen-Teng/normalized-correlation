@@ -13,21 +13,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Normalized_corr$norm_corr.coverage" NAME="norm_corr Coverage Results" MODIFIED="1533588340291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Normalized_corr$norm_corr.coverage" NAME="norm_corr Coverage Results" MODIFIED="1533673280789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="norm_corr.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/norm_corr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+            <state relative-caret-position="129">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#186#326#0" />
-                <element signature="e#402#651#0" />
                 <element signature="e#738#924#0" />
                 <element signature="e#1000#1276#0" />
+                <element signature="e#1325#1361#0" />
+                <element signature="e#1330#1373#0" />
               </folding>
             </state>
           </provider>
@@ -58,7 +59,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -68,7 +69,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +80,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,18 +148,18 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22344828" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46068966" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1615509" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.060581584" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.31825525" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.5638126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -177,28 +178,45 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/norm_corr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#186#326#0" />
-            <element signature="e#402#651#0" />
             <element signature="e#738#924#0" />
             <element signature="e#1000#1276#0" />
+            <element signature="e#1325#1361#0" />
+            <element signature="e#1330#1373#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/norm_corr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        <state relative-caret-position="2046">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="23" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#186#326#0" />
-            <element signature="e#402#651#0" />
             <element signature="e#738#924#0" />
             <element signature="e#1000#1276#0" />
+            <element signature="e#1325#1361#0" />
+            <element signature="e#1330#1373#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/norm_corr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#186#326#0" />
+            <element signature="e#738#924#0" />
+            <element signature="e#1000#1276#0" />
+            <element signature="e#1325#1361#0" />
+            <element signature="e#1330#1373#0" />
           </folding>
         </state>
       </provider>

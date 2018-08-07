@@ -53,6 +53,18 @@ def hash_convert_binary(str):
     return code
 
 
+# calculate mean
+def calculate_mean(list):
+    mean = np.mean(list)
+    return mean
+
+
+# calculate variance
+def calculate_variance(list):
+    variance = np.std(list)
+    return variance
+
+
 # step one
 # generate 2 matrix, A and B
 A = 1 - 2 * np.random.randint(2, size=(50, 100))
@@ -66,17 +78,19 @@ pn = []
 for row in C:
     pn.append(generate_max_len_seq(nbits=100, state=row))
 
-A_trans = np.transpose(A)
-B_trans = np.transpose(B)
-
 # calculate normalized correlation
 norm_corr = []
 col = 1
-matrix_length = len(A_trans)
+matrix_length = len(C)
 for row_index in range(matrix_length - 1):
-    for col in range(matrix_length):
+    for col in range(1, matrix_length):
         if col > row_index:
-            norm_corr.append(normalized_correlation(A_trans[row_index], A_trans[col]))
+            norm_corr.append(normalized_correlation(C[row_index], C[col]))
+
+print("step one: ")
+print("mean: ", calculate_mean(norm_corr))
+print("variance: ", calculate_variance(norm_corr))
+print()
 
 # plot a image
 plt.figure(0)
@@ -98,21 +112,28 @@ for i in range(num_image):
 for i in range(len(veri_code)):
     binary_list.append(hash_convert_binary(veri_code[i]))
 
+for i in range(len(binary_list)):
+    for j in range(len(binary_list[0])):
+        if binary_list[i][j] == 0:
+            binary_list[i][j] = -1
+
 # generate PN sequence
 for item in binary_list:
     pn_images.append(generate_max_len_seq(nbits=512, state=item))
 
 # calculate normalized correlation
-pn_images_trans = np.transpose(pn_images)
-
 norm_corr_images = []
 col = 1
 pn_length = len(pn_images)
 
 for row_index in range(pn_length - 1):
-    for col in range(pn_length):
+    for col in range(1, pn_length):
         if col > row_index:
-            norm_corr_images.append(normalized_correlation(pn_images_trans[row_index], pn_images_trans[col]))
+            norm_corr_images.append(normalized_correlation(pn_images[row_index], pn_images[col]))
+
+print("step two: ")
+print("mean: ", calculate_mean(norm_corr_images))
+print("variance: ", calculate_variance(norm_corr_images))
 
 # plot a image
 plt.figure(1)
